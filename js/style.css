@@ -9683,3 +9683,8 @@ ul.footer-social li a:hover {
 		background: #454b4f;
 	}
 }
+
+
+.swiper-button-next {
+background-color: red !important;
+}
