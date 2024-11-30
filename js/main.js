@@ -364,6 +364,42 @@
 		});
 
 
+				/* ==================================================
+            # Related Product Carousel
+         ===============================================*/
+		 const galleryProducts = new Swiper(".gallery-products-carousel", {
+			// Optional parameters
+			loop: true,
+			slidesPerView: 1,
+			spaceBetween: 30,
+			autoplay: true,
+						// If we need pagination
+						pagination: {
+							el: '.swiper-pagination',
+							type: 'bullets',
+							clickable: true,
+						},
+			
+						// Navigation arrows
+						navigation: {
+							nextEl: ".swiper-button-next",
+							prevEl: ".swiper-button-prev"
+						},
+			breakpoints: {
+				768: {
+					slidesPerView: 2,
+				},
+				992: {
+					slidesPerView: 3,
+				},
+				1400: {
+					slidesPerView: 4,
+				},
+			},
+		});
+
+
+
 		/* ==================================================
 		    Date Picker Init
 		================================================== */

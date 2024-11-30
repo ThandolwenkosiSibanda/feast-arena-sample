@@ -9681,7 +9681,7 @@ ul.footer-social li a:hover {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.bg-dark-secondary .reservation-tabs form.reservation-form {
-		background: #454b4f;
+		/* background: #454b4f; */
 	}
 }
 
@@ -9711,4 +9711,9 @@ ul.footer-social li a:hover {
 	justify-content: center;
 	align-items: center;
 	/* background-color: green; */
+}
+
+
+.reservation-info {
+	background-color: #f38636 !important;
 }
