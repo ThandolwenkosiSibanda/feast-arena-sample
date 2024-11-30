@@ -7586,7 +7586,7 @@ ul.contact-widget li i {
 
 .footer-bottom {
 	margin-top: 80px;
-	background: var(--white);
+	/* background: var(--white); */
 	border-radius: 10px 10px 0 0;
 	padding: 30px;
 	padding-bottom: 0;
@@ -7595,25 +7595,25 @@ ul.contact-widget li i {
 }
 
 .footer-bottom::before {
-	position: absolute;
+	/* position: absolute;
 	left: -22px;
 	bottom: 0px;
 	content: "";
 	height: 40px;
 	width: 22px;
-	border-bottom-right-radius: 20px;
-	box-shadow: 0 20px 0 0 var(--white);
+	border-bottom-right-radius: 20px; */
+	/* box-shadow: 0 20px 0 0 var(--white); */
 }
 
 .footer-bottom::after {
-	position: absolute;
+	/* position: absolute;
 	right: -22px;
 	bottom: 0px;
 	content: "";
 	height: 40px;
 	width: 22px;
 	border-bottom-left-radius: 20px;
-	box-shadow: 0 20px 0 0 var(--white);
+	box-shadow: 0 20px 0 0 var(--white); */
 }
 
 .footer-bottom img {
@@ -9716,4 +9716,13 @@ ul.footer-social li a:hover {
 
 .reservation-info {
 	background-color: #f38636 !important;
+}
+
+.footer-image {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	justify-content: center;
+	align-content: flex-end;
+	align-items: center;
 }
