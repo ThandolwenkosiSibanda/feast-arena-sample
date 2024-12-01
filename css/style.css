@@ -6788,7 +6788,7 @@ ul.meal-items.style-two li {
 	left: 0;
 	top: 0;
 	/* background-color: red; */
-	/* overflow: hidden; */
+	overflow: hidden;
 }
 
 .reservation-tabs {
@@ -9749,4 +9749,22 @@ ul.footer-social li a:hover {
 
 .navbar-header {
 	min-height: 80px;
+}
+
+
+.map-container {
+	/* background-color: red; */
+	min-height: 400px;
+	padding: 30px;
+}
+
+#map{
+	height: 100%;
+	width: 100%;
+}
+
+.reservation-container {
+	/* background-color: #1DA1F2; */
+	min-height: 400px;
+	padding: 30px;
 }
