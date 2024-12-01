@@ -17,7 +17,7 @@
 
     <!-- ========== Start Stylesheet ========== -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link href="css/font-awesome.min.css" rel="stylesheet"> -->
     <link href="css/flaticon-set.css" rel="stylesheet">
     <link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/swiper-bundle.min.css" rel="stylesheet">
@@ -29,6 +29,13 @@
     <link href="css/shop.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!-- ========== End Stylesheet ========== -->
+
+    <style>
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
 
 
 </head>
@@ -137,9 +144,13 @@
 
                                 <!-- Start Header Navigation -->
                                 <div class="navbar-header">
-                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                                        <i class="fa fa-bars"></i>
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu" >
+                                        
+                                        <i class="fa fa-bars" aria-hidden="true"></i>
+                                        <!-- <a class="navbar-brand" href="index.html"></a> -->
                                     </button>
+
+                                    
                                     <a class="navbar-brand" href="index.html">
                                         <img src="img/logo-light.png" class="logo logo-display" alt="Logo">
                                         <img src="img/logo.png" class="logo logo-scrolled" alt="Logo">
@@ -187,12 +198,11 @@
                                     <!-- <h4>GREAT FOOD, DRINKS & MUSIC PUB AND GRILL</h4> -->
                                     <h2 style="text-align: center;">Where Flavor Meets Freshness & Every Bite Tells a Story.</h2>
 
-
-                                    <div style="display: flex; flex-direction: row; gap: 10px; margin-bottom: 50px;">
-                                        <div class="button mt-40">
+                                    <div class="row" style="margin-bottom: 50px;">
+                                        <div class="col-sm-12 col-md-6 col-lg-6 ">
                                             <a class="btn btn-theme btn-md animation" href="shop.html">View Menu</a>
                                         </div>
-                                        <div class="button mt-40">
+                                        <div class="col-sm-12 col-md-6 col-lg-6 ">
                                             <a class="btn btn-theme btn-md animation" href="shop.html">Reservations</a>
                                         </div>
                                     </div>
@@ -221,11 +231,11 @@
                                     <h2 style="text-align: center;">Perfect for those extra special moments with family or that extra special someone.</h2>
 
 
-                                    <div style="display: flex; flex-direction: row; gap: 10px; margin-bottom: 50px;">
-                                        <div class="button mt-40">
+                                    <div class="row" style="margin-bottom: 50px;">
+                                        <div class="col-sm-12 col-md-6 col-lg-6 ">
                                             <a class="btn btn-theme btn-md animation" href="shop.html">View Menu</a>
                                         </div>
-                                        <div class="button mt-40">
+                                        <div class="col-sm-12 col-md-6 col-lg-6 ">
                                             <a class="btn btn-theme btn-md animation" href="shop.html">Reservations</a>
                                         </div>
                                     </div>
@@ -347,7 +357,7 @@
             <div class="row align-center">
                 <div class="col-lg-6">
                     <div class="fun-fact-style-one-items">
-                        <h2 class="split-text">Experience of  real and authentic recipes</h2>
+                        <h2 class="split-text">Experience of real and authentic recipes</h2>
                         <div class="fun-fact-style-one-content">
 
 
@@ -370,8 +380,14 @@
     <!-- Start Reservation
     ============================================= -->
     <div class="reservation-style-two-area">
-        <div class="reservation-banner">
-            <img src="img/reservations.jpg" alt="Image Not Found">
+        <div class="reservation-banner" >
+
+            <div>
+                <div id="map"></div>
+
+            </div>
+            <!-- <img src="img/reservations.jpg" alt="Image Not Found"> -->
+
         </div>
         <div class="container">
             <div class="row">
@@ -610,14 +626,12 @@
                                         <i class="fab fa-twitter"></i>
                                     </a>
                                 </li>
+
                                 <li>
                                     <a href="#">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-linkedin-in"></i>
+                                        <i class="fab fa-instagram"></i>
+
+                                        
                                     </a>
                                 </li>
                             </ul>
@@ -629,7 +643,30 @@
         </div>
     </footer>
     <!-- End Footer -->
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4-L8lcDbH2QhHAIZmBufUZ9K3E-7xH9E&callback=initMap" async defer></script>
     
+
+    <script>
+        function initMap() {
+            // Location coordinates (example: Bulawayo, Zimbabwe)
+            const location = { lat: -20.132, lng: 28.626 };
+
+            // Create the map
+            const map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12,
+                center: location,
+            });
+
+            // Add a marker
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                title: 'Feast Arena',
+            });
+        }
+    </script>
     <!-- jQuery Frameworks
     ============================================= -->
     <script src="js/jquery-3.6.0.min.js"></script>
@@ -650,6 +687,8 @@
     <script src="js/ScrollTrigger.min.js"></script>
     <script src="js/SplitText.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script src="https://kit.fontawesome.com/85ad98d7c0.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

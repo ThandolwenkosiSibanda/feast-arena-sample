@@ -82,10 +82,10 @@ Sidebar heading:  22px 'Jost', sans-serif
 
 /* Varialbes */
 :root {
-	--font-default: 'Jost', sans-serif;
+	--font-default: "Oswald", sans-serif;
 	--font-heading: "Oswald", sans-serif;
 	--font-optional: "Dancing Script", cursive;
-	--fontawesome: "Font Awesome 5 Pro";
+	/* --fontawesome: "Font Awesome 5 Pro"; */
 	--black: #000000;
 	--dark: #1d2024;
 	--dark-secondary: #303233;
@@ -6779,6 +6779,18 @@ ul.meal-items.style-two li {
 	top: 0;
 }
 
+.reservation-banner div {
+	height: 100%;
+	width: 48%;
+	object-fit: cover;
+	object-position: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	/* background-color: red; */
+	/* overflow: hidden; */
+}
+
 .reservation-tabs {
 	padding: 120px 0;
 	position: relative;
@@ -9725,4 +9737,16 @@ ul.footer-social li a:hover {
 	justify-content: center;
 	align-content: flex-end;
 	align-items: center;
+}
+
+.swiper-button-next {
+	color: #f38636 !important;
+}
+
+.swiper-button-prev {
+	color: #f38636 !important;
+}
+
+.navbar-header {
+	min-height: 80px;
 }
